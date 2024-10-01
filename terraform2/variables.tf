@@ -1,10 +1,10 @@
 variable "vpc_id" {
-  description = "ID VPC, в котором будет создан экземпляр"
+  description = "ID VPC"
   type        = string
 }
 
 variable "subnet_id" {
-  description = "ID подсети для EC2 экземпляра"
+  description = "ID подсети"
   type        = string
 }
 
@@ -14,12 +14,12 @@ variable "list_of_open_ports" {
 }
 
 variable "ami_id" {
-  description = "AMI ID для EC2 экземпляра"
+  description = "AMI ID для EC2"
   type        = string
 }
 
 variable "instance_type" {
-  description = "Тип EC2 экземпляра"
+  description = "Тип EC2"
   type        = string
   default     = "t2.micro"
 }
